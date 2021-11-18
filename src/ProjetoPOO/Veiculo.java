@@ -35,6 +35,14 @@ public class Veiculo extends Morador {
 		}
 	}
 
+	public int getVagas() {
+		return vagas;
+	}
+
+	public void setVagas(int vagas) {
+		this.vagas = vagas;
+	}
+
 	public int getTem() {
 		return tem;
 	}
