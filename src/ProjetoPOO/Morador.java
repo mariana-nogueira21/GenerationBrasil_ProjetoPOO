@@ -17,7 +17,7 @@ public class Morador extends Pessoa {
 		
 	}
 	
-	//Métodos
+	//Métodos abc
 	
 	public void entrar () {
 		if (this.cadastro == 1) {
