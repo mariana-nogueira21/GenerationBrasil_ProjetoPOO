@@ -12,7 +12,7 @@ public class PessoaTestar {
 		String nome;
 		int cadastro;
 		
-		Boolean convite;
+		int convite;
 		int horario;
 				
 		//CRIANDO OBJETO COM O PRIMEIRO CONSTRUCTOR
@@ -48,6 +48,8 @@ public class PessoaTestar {
 				m1 = new Morador (nome, cadastro);
 				//PUXANDO MÉTODO
 				m1.entrar();
+				
+				m1.status();
 				break;
 			
 			case 2:
@@ -55,14 +57,15 @@ public class PessoaTestar {
 				nome = escreva.nextLine();
 				System.out.print("Horario da visita? ");
 				horario = escreva.nextInt();
-				System.out.print("Posui autorização do morador? ");
-				convite = escreva.hasNext();
+				System.out.print("Posui autorização do morador? 1 - SIM / 2 - NÃO");
+				convite = escreva.nextInt();
 				
+				//PUXANDO CONSTRUCTOR E PARÂMETROS
 				v1 = new Visitante(nome, horario, convite);
-				
+				//PUXANDO MÉTODO
 				v1.entrar();
-								
-		
+				
+				v1.status();
 				break;
 						
 			case 3:
@@ -78,7 +81,8 @@ public class PessoaTestar {
 			
 			} while (opcao != 0);
 		
-		m1.status();
+		
+		
 
 	}
 
