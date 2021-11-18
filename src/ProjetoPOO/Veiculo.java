@@ -11,22 +11,25 @@ public class Veiculo extends Morador {
 	
 	public Veiculo (int temOuNao) {
 		temOuNao = this.tem;
-		
 	}
 	
-	public void vagas () {
-		System.out.println("Tem veículo? 1-Sim/2-Não");
+	public void automovel () {	
+		if (this.tem == 1) {
 		
-		if (tem == 1) {
-		
-			System.out.println("Qual?");
-			System.out.println("1- Carro");
-			System.out.println("2- Moto");
-			System.out.println("3- Outro");
+			System.out.println("Qual? 1- Carro 2- Moto 3- Bicicleta");
 			
 			switch (vagas) {
 			case 1:
-			System.out.println("Vagas livres: Subterrâneo - 2A, 2B, 4C, 6D");
+				System.out.println("Vagas livres: Subterrâneo - 2A, 2B, 4C, 6D");
+			break;
+			
+			case 2:
+				System.out.println("Vagas livres: Subterrâneo - 3A, 8C, 9F, 5E, 10G");
+			break;
+			
+			case 3:
+				System.out.println("Vagas livres: Terreas - 1B, 2A, 6D, 11F, 8G");
+			break;
 			
 			}
 		}
