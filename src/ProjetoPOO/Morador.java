@@ -21,7 +21,7 @@ public class Morador extends Pessoa {
 	
 	public void entrar () {
 		if (this.cadastro == 1) {
-			System.out.println("Pode entrar senhor");
+			System.out.println("Pode entrar senhor(a)");
 		}else {
 			System.out.println("Não pode entrar");
 		}
