@@ -2,12 +2,11 @@ package ProjetoPOO;
 
 public class Morador extends Pessoa {
 
-	//ATRIBUTOS
-
+	// ATRIBUTOS
 	private int cadastro;
 	private String ondeMora;
 
-	// ConstrutoresF
+	// CONSTRUTORES
 	public Morador() {
 
 	}
@@ -18,8 +17,7 @@ public class Morador extends Pessoa {
 
 	}
 
-	// Métodos
-
+	// MÉTODOS
 	@Override
 	public void entrar() {
 		if (this.cadastro == 1) {
@@ -53,7 +51,6 @@ public class Morador extends Pessoa {
 	}
 
 	// GETTERS E SETTERS
-
 	public int getCadastro() {
 		return cadastro;
 	}

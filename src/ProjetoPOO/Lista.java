@@ -29,7 +29,6 @@ public class Lista {
 	}
 
 	// MÉTODOS VISITANTES
-
 	public void insereVisitantes(Visitante novoVisitante) {
 		listaDeVisitantes.add(novoVisitante);
 	}
@@ -45,7 +44,6 @@ public class Lista {
 	}
 
 	// MÉSTODOS FUNCIONÁRIOS
-
 	public void insereFuncionario(Funcionario novoFuncionario) {
 		listaDeFuncionarios.add(novoFuncionario);
 	}

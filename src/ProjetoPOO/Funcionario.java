@@ -1,15 +1,14 @@
 package ProjetoPOO;
 
 public class Funcionario extends Pessoa {
-	// Atributos
 
+	// ATRIBUTOS
 	private String nome;
 	private int cargo;
 	private double salario;
 	private int cracha;
 
 	// CONSTRUCTORS
-
 	Funcionario() {
 
 	}
@@ -33,9 +32,9 @@ public class Funcionario extends Pessoa {
 	}
 
 	public void Cargo() {
-		// 1-Porteiro
-		// 2-Segurança
-		// 3-Manutenção
+		// 1 - PORTEIRO
+		// 2 - SEGURANÇA
+		// 3 - MANUTENÇÃO
 
 		if (this.cargo == 1) {
 			this.salario = 1300.00;
@@ -73,7 +72,6 @@ public class Funcionario extends Pessoa {
 	}
 
 	// GETTERS E SETTERS
-
 	public void setCargo(int cargo) {
 		this.cargo = cargo;
 	}

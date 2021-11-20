@@ -7,7 +7,6 @@ public class Veiculo extends Morador {
 	private int sOun;
 
 	// CONSTRUCTORS
-
 	public Veiculo() {
 
 	}
@@ -22,7 +21,6 @@ public class Veiculo extends Morador {
 	}
 
 	// MÉTODOS
-
 	public void automovel() {
 
 		switch (this.sOun) {
@@ -58,7 +56,6 @@ public class Veiculo extends Morador {
 	}
 
 	// GETTERS E SETTERS
-
 	public int getVagas() {
 		return vagas;
 	}

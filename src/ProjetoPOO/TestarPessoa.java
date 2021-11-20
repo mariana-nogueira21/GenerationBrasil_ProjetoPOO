@@ -2,23 +2,22 @@ package ProjetoPOO;
 
 import java.util.Scanner;
 
-public class PessoaTestar {
+public class TestarPessoa {
 
 	public static void main(String[] args) {
 
 		// CRIANDO VARIÁVEIS
-
-		// morador
+		// MORADOR
 		int opcao;
 		String nome;
 		int cadastro;
-		// veiculo
+		// VEICULO
 		int temOuNao;
 		int sOUn;
-		// visitante
+		// VISITANTE
 		int convite;
 		int horario;
-		// funcionario
+		// FUNCIONARIO
 		int cracha;
 		int cargo;
 
@@ -40,9 +39,9 @@ public class PessoaTestar {
 			System.out.println("1 - Morador");
 			System.out.println("2 - Visitante");
 			System.out.println("3 - Funcionário");
-			System.out.println("5 - Lista de Moradores");
-			System.out.println("6 - Lista de Visitantes");
-			System.out.println("7 - Lista de Funcionários");
+			System.out.println("4 - Lista de Moradores");
+			System.out.println("5 - Lista de Visitantes");
+			System.out.println("6 - Lista de Funcionários");
 			System.out.println("0 - SAIR");
 
 			opcao = escreva.nextInt();
@@ -54,7 +53,6 @@ public class PessoaTestar {
 				nome = escreva.nextLine();
 				System.out.print("Cadastro? 1 - SIM / 2 - NÃO ");
 				cadastro = escreva.nextInt();
-
 				System.out.println("Tem veículo? 1-Sim/2-Não");
 				temOuNao = escreva.nextInt();
 
@@ -62,24 +60,23 @@ public class PessoaTestar {
 				veic = new Veiculo(temOuNao);
 
 				if (temOuNao == 1) {
-
 					System.out.println("Qual? 1- Carro 2- Moto 3- Bicicleta");
 					sOUn = escreva.nextInt();
 					veic = new Veiculo(sOUn, 0);
 
 					// PUXANDO MÉTODO
 					veic.automovel();
-
 				}
 
 				// PUXANDO CONSTRUCTOR E PARÂMETROS
 				m1 = new Morador(nome, cadastro);
+				
 				// PUXANDO MÉTODO
 				m1.entrar();
-
 				m1.status();
 				veic.status();
 				novaLista.insereMorador(m1);
+				
 				break;
 
 			case 2:
@@ -92,19 +89,20 @@ public class PessoaTestar {
 
 				// PUXANDO CONSTRUCTOR E PARÂMETROS
 				v1 = new Visitante(nome, horario, convite);
+				
 				// PUXANDO MÉTODO
 				v1.entrar();
-
 				v1.status();
 				novaLista.insereVisitantes(v1);
+				
 				break;
 
 			case 3:
 				System.out.print("Nome: ");
 				nome = escreva.nextLine();
-
 				System.out.println("Qual sua função? 1-Porteiro / 2-Segurança / 3-Manutenção");
 				cargo = escreva.nextInt();
+				
 				// PUXANDO CONSTRUCTOR E PARÂMETROS
 				f1 = new Funcionario(cargo);
 				f1.Cargo();
@@ -113,26 +111,24 @@ public class PessoaTestar {
 				cracha = escreva.nextInt();
 				// PUXANDO CONSTRUCTOR E PARÂMETROS
 				f1 = new Funcionario(nome, cracha);
-
 				f1.entrar();
-
 				f1.status();
-
 				novaLista.insereFuncionario(f1);
 
 				break;
 
-			case 5:
+			case 4:
 				novaLista.listarMoradores();
-
 				break;
-			case 6:
+				
+			case 5:
 				novaLista.listarVisitantes();
 				break;
 
-			case 7:
+			case 6:
 				novaLista.listarFuncionario();
 				break;
+				
 			case 0:
 				System.out.println("Até mais senhor...");
 				break;
@@ -142,7 +138,9 @@ public class PessoaTestar {
 			}
 
 		} while (opcao != 0);
+		
+		escreva.close();
 
 	}
-
+	
 }
